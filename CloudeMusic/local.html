@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>网易云音乐</title>
     <style>
         * {
             margin: 0px;
@@ -63,11 +63,6 @@
             background-color: #e4e8ec;
         }
 
-        .iconfont:focus {
-            background-color: #fc3d49;
-            color: white;
-        }
-
         .choiceness .iconfont {
             top: 87px;
         }
@@ -104,6 +99,8 @@
 
         .local .iconfont {
             top: 352px;
+            background-color: #fc3d49;
+            color: white;
         }
 
         .songlistbox .songlist {
@@ -229,100 +226,6 @@
             top: 19px;
             right: 27px;
         }
-
-        .winnowbox {
-            width: 309px;
-            height: 33px;
-            position: absolute;
-            left: 40px;
-            top: 93px;
-        }
-
-        .winnowbox .winnow {
-            display: block;
-            float: left;
-            margin-right: 25px;
-            text-decoration: none;
-            line-height: 33px;
-            color: #7b82a7;
-        }
-
-        .winnowbox .VIP {
-            display: block;
-            float: left;
-            text-decoration: none;
-            line-height: 33px;
-            color: #7b82a7;
-        }
-
-        .winnowbox .winnow:focus {
-            color: #283248;
-            font-weight: bolder;
-        }
-
-        .winnowbox .VIP:focus {
-            color: #283248;
-            font-weight: bolder;
-        }
-
-        .official {
-            position: absolute;
-            top: 350px;
-            left: 40px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bolder;
-            color: #283248;
-        }
-
-        .playlist {
-            position: absolute;
-            top: 383px;
-            left: 40px;
-        }
-
-        .playlist li {
-            float: left;
-            width: 203px;
-            height: 260px;
-            margin-right: 18px;
-            border-radius: 9px;
-            background-color: #dcdfe4;
-        }
-
-        #six {
-            margin-right: 0px;
-        }
-
-        .latestMusic {
-            position: absolute;
-            top: 678px;
-            left: 40px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bolder;
-            color: #283248;
-        }
-
-        .audioBook {
-            position: absolute;
-            top: 993px;
-            left: 40px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bolder;
-            color: #283248;
-        }
-
-        .popularPodcast {
-            position: absolute;
-            top: 1353px;
-            left: 40px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bolder;
-            color: #283248;
-        }
     </style>
 
 </head>
@@ -337,19 +240,19 @@
             </div>
 
             <div class="choiceness">
-                <a href="#" class="iconfont">
+                <a href="choiceness.html" class="iconfont">
                     &#xe7a1; &nbsp;云音乐精选
                 </a>
             </div>
 
             <div class="podcast">
-                <a href="#" class="iconfont">
+                <a href="podcast.html" class="iconfont">
                     &#xe501; &nbsp;播客
                 </a>
             </div>
 
             <div class="community">
-                <a href="#" class="iconfont">
+                <a href="community.html" class="iconfont">
                     &#xe8c5; &nbsp;社区
                 </a>
             </div>
@@ -357,25 +260,25 @@
             <div class="gap"></div>
 
             <div class="love">
-                <a href="#" class="iconfont">
+                <a href="love.html" class="iconfont">
                     &#xe738; &nbsp;我喜欢的音乐
                 </a>
             </div>
 
             <div class="lately">
-                <a href="#" class="iconfont">
+                <a href="lately.html" class="iconfont">
                     &#xe614; &nbsp;最近播放
                 </a>
             </div>
 
             <div class="download">
-                <a href="#" class="iconfont">
+                <a href="download.html" class="iconfont">
                     &#xe629; &nbsp;下载管理
                 </a>
             </div>
 
             <div class="local">
-                <a href="#" class="iconfont">
+                <a href="local.html" class="iconfont">
                     &#xe7a0; &nbsp;本地音乐
                 </a>
             </div>
@@ -406,45 +309,8 @@
             <div class="others">
                 <img src="images/others.jpg">
             </div>
-
-            <div class="winnowbox">
-                <a href="#" class="winnow">精选</a>
-                <a href="#" class="winnow">歌单广场</a>
-                <a href="#" class="winnow">排行榜</a>
-                <a href="#" class="winnow">歌手</a>
-                <a href="#" class="VIP">VIP</a>
-            </div>
-
-            <div class="slideshow">
-
-            </div>
-
-            <a href="#" class="official">官方歌单 &gt;</a>
-
-            <div class="playlist">
-
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li id="six"></li>
-
-            </div>
-
-            <a href="#" class="latestMusic">最新音乐 &gt;</a>
-
-            <a href="#" class="audioBook">精选有声书 &gt;</a>
-
-            <a href="#" class="popularPodcast">热门播客 &gt;</a>
         </div>
-
     </div>
-
-
-
-
-
 </body>
 
 </html>

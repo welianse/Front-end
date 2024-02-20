@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <style>
+        * {
+            margin: 0px;
+            top: 0px;
+            list-style: none;
+        }
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('fonts/iconfont.ttf') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .box {
+            width: 1583px;
+            height: 1685px;
+            background-color: #f0f3f6;
+        }
+
+        .leftbox {
+            width: 204px;
+            height: 865px;
+            background-color: #f0f3f6;
+            position: fixed;
+        }
+
+        .cloudicon {
+            width: 100%;
+            position: absolute;
+            top: 20px;
+        }
+
+        .iconfont {
+            display: block;
+            width: 156px;
+            height: 36px;
+            position: absolute;
+            margin: 4px 24px;
+            background-color: #f0f3f6;
+            border-radius: 8px;
+            line-height: 36px;
+            text-indent: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #787fa4;
+        }
+
+        .iconfont:hover {
+            background-color: #e4e8ec;
+        }
+
+        .choiceness .iconfont {
+            top: 87px;
+        }
+
+        .podcast .iconfont {
+            top: 127px;
+            background-color: #fc3d49;
+            color: white;
+        }
+
+        .community .iconfont {
+            top: 167px;
+        }
+
+        .gap {
+            width: 138px;
+            height: 13px;
+            position: absolute;
+            top: 207px;
+            background-color: #f0f3f6;
+            margin: 0 33px;
+            border-bottom: 2px solid #e4e8ec;
+        }
+
+        .love .iconfont {
+            top: 232px;
+        }
+
+        .lately .iconfont {
+            top: 272px;
+        }
+
+        .download .iconfont {
+            top: 312px;
+        }
+
+        .local .iconfont {
+            top: 352px;
+        }
+
+        .songlistbox .songlist {
+            display: block;
+            width: 138px;
+            height: 59px;
+            position: absolute;
+            top: 401px;
+            margin: 0 33px;
+            border-top: 2px solid #e4e8ec;
+            border-bottom: 2px solid #e4e8ec;
+            line-height: 59px;
+            text-indent: 1px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bolder;
+            color: #787f8d;
+        }
+
+        .songlistbox .songlist:hover {
+            color: #3c4559;
+        }
+
+        .rightbox {
+            width: 1379px;
+            height: 100%;
+            background-color: #f7f9fc;
+            position: relative;
+            left: 204px;
+        }
+
+        .backspace {
+            display: block;
+            width: 26px;
+            height: 34px;
+            position: absolute;
+            left: 40px;
+            top: 17px;
+            background-color: #f7f9fc;
+            border: 1px solid #d0d2d9;
+            border-radius: 8px;
+            text-decoration: none;
+            line-height: 32px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bolder;
+            color: #5f6778;
+        }
+
+        .backspace:hover {
+            background-color: #e2e5e9;
+        }
+
+        .searchbox {
+            width: 256px;
+            height: 34px;
+            position: absolute;
+            left: 75px;
+            top: 17px;
+            background: linear-gradient(to right, #ebf0fb, #f3f0fc, #f8eef7);
+            border: 1px solid #f2e3f5;
+            border-radius: 8px;
+            text-decoration: none;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .searchbox .iconfont {
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: -14px;
+            top: -4px;
+            background-color: rgb(0, 0, 0, 0);
+            font-size: 19px;
+            color: #9ea5b3;
+            font-weight: bolder;
+        }
+
+        .searchbox .iconfont:hover {
+            color: #5f6779;
+        }
+
+        .searchbox .input-filed {
+            position: absolute;
+            left: 48px;
+            top: 0px;
+        }
+
+        .input-filed input {
+            width: 196px;
+            height: 18px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 0, 0, 0);
+        }
+
+        .recognize .iconfont {
+            display: block;
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            left: 317px;
+            top: 13px;
+            background: linear-gradient(to right, #f6eff9, #f7e6f3);
+            border: 1px solid #f4e4ea;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .recognize .iconfont:hover {
+            background: linear-gradient(to right, #f3e7f7, #f6e6f3);
+        }
+
+        .others img {
+            width: 361px;
+            height: 32px;
+            position: absolute;
+            top: 19px;
+            right: 27px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="leftbox">
+
+            <div class="cloudicon">
+                <img src="images/cloud.png" width="100%">
+            </div>
+
+            <div class="choiceness">
+                <a href="choiceness.html" class="iconfont">
+                    &#xe7a1; &nbsp;云音乐精选
+                </a>
+            </div>
+
+            <div class="podcast">
+                <a href="podcast.html" class="iconfont">
+                    &#xe501; &nbsp;播客
+                </a>
+            </div>
+
+            <div class="community">
+                <a href="community.html" class="iconfont">
+                    &#xe8c5; &nbsp;社区
+                </a>
+            </div>
+
+            <div class="gap"></div>
+
+            <div class="love">
+                <a href="love.html" class="iconfont">
+                    &#xe738; &nbsp;我喜欢的音乐
+                </a>
+            </div>
+
+            <div class="lately">
+                <a href="lately.html" class="iconfont">
+                    &#xe614; &nbsp;最近播放
+                </a>
+            </div>
+
+            <div class="download">
+                <a href="download.html" class="iconfont">
+                    &#xe629; &nbsp;下载管理
+                </a>
+            </div>
+
+            <div class="local">
+                <a href="local.html" class="iconfont">
+                    &#xe7a0; &nbsp;本地音乐
+                </a>
+            </div>
+
+            <div class="songlistbox">
+                <a href="#" class="songlist">创建的歌单(0)</a>
+                <a href="#" class="icon"></a>
+            </div>
+        </div>
+
+
+        <div class="rightbox">
+            <a href="#" class="backspace">
+                &lt
+            </a>
+
+            <div class="searchbox">
+                <a href="#" class="iconfont">&#xe632;</a>
+                <div class="input-filed">
+                    <input type="text" id="search" name="search">
+                </div>
+            </div>
+
+            <a href="#" class="recognize">
+                <p class="iconfont">&#xe61a;</p>
+            </a>
+
+            <div class="others">
+                <img src="images/others.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
