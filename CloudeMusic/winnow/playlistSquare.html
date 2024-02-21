@@ -257,15 +257,36 @@
             font-weight: bolder;
         }
 
-        /* .winnowbox .winnow:focus {
-            color: #283248;
-            font-weight: bolder;
+        .options {
+            position: absolute;
+            top: 140px;
+            left: 40px;
         }
 
-        .winnowbox .VIP:focus {
+        .option {
+            display: block;
+            float: left;
+            width: 60px;
+            height: 30px;
+            border: 1px solid #e2e5e9;
+            border-radius: 15px;
+            margin-right: 9px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
             color: #283248;
-            font-weight: bolder;
-        } */
+        }
+
+        #more {
+            width: 80px;
+        }
+
+        .option:focus {
+            color: #ff3a3a;
+            background-color: #f8eaed;
+            border-color: #f8d8db;
+        }
     </style>
 
 </head>
@@ -351,11 +372,22 @@
             </div>
 
             <div class="winnowbox">
-                <a href="#" class="winnow">精选</a>
-                <a href="../winnow/playlistSquare.html" class="winnow" id="playlistSquare">歌单广场</a>
-                <a href="#" class="winnow">排行榜</a>
-                <a href="#" class="winnow">歌手</a>
-                <a href="#" class="VIP">VIP</a>
+                <a href="../choiceness.html" class="winnow">精选</a>
+                <a href="playlistSquare.html" class="winnow" id="playlistSquare">歌单广场</a>
+                <a href="rankinglist.html" class="winnow" id="rankinglist">排行榜</a>
+                <a href="singer.html" class="winnow" id="singer">歌手</a>
+                <a href="VIP.html" class="VIP" id="VIP">VIP</a>
+            </div>
+
+            <div class="options">
+                <a href="#" class="option">推荐</a>
+                <a href="#" class="option">官方</a>
+                <a href="#" class="option">华语</a>
+                <a href="#" class="option">摇滚</a>
+                <a href="#" class="option">民谣</a>
+                <a href="#" class="option">电子</a>
+                <a href="#" class="option">轻音乐</a>
+                <a href="#" class="option" id="more">更多分类</a>
             </div>
         </div>
     </div>
